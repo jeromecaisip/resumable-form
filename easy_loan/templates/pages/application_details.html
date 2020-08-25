@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+  <h4>General Information</h4>
+  <p>First Name: {{ profile.first_name }}</p>
+  <p>Last Name: {{ profile.first_name }}</p>
+  <p>DOB: {{ profile.birth_date }}</p>
+
+
+  <h4>Employment</h4>
+  {% for employer in profile.employment_history.all %}
+    <p>Company: {{ employer.company }}</p>
+    <p>Start: {{ employer.start }}</p>
+    {% if employer.currently_working %}
+      <p>Present: {{ employer.currently_working }}</p>
+    {% else %}
+      <p>End: {{ employer.end }}</p>
+    {% endif %}
+  {% endfor %}
+
+
+  <h4>Guarantors</h4>
+  {% for guarantor in profile.guarantors.all %}
+    <p>First Name: {{ guarantor.first_name }}</p>
+    <p>Last Name: {{ guarantor.last_name }}</p>
+    <p>Email: {{ guarantor.email }}</p>
+  {% endfor %}
+
+
+{% endblock %}

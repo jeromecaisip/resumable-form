@@ -1,0 +1,8 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=easy_loan
+POSTGRES_USER=LEdwPqLZZpUeVqBRkTmNJdQsQFncZuOv
+POSTGRES_PASSWORD=1zUOZMRaqrNBOvHErYr6KeHMsD71rC9tnQ48sLd0lFydBLy3j2iro53dhWUAZfuC
+DATABASE_URL=postgres://LEdwPqLZZpUeVqBRkTmNJdQsQFncZuOv:1zUOZMRaqrNBOvHErYr6KeHMsD71rC9tnQ48sLd0lFydBLy3j2iro53dhWUAZfuC@postgres:5432/easy_loan
